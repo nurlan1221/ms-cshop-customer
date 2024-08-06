@@ -21,7 +21,7 @@ jacoco {
 }
 sonar {
     properties {
-        property "sonar.projectKey", "nurlan1221_ms-cshop-customer"
+        property "sonar.projectKey", "nurlan1221_ms-shop-customer"
         property "sonar.organization", "nurlan1221"
         property "sonar.host.url", "https://sonarcloud.io"
     }
