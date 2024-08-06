@@ -3,6 +3,8 @@ plugins {
     id 'org.springframework.boot' version '3.3.2'
     id 'io.spring.dependency-management' version '1.1.6'
     id 'jacoco'
+    id "org.sonarqube" version "4.4.1.3373"
+
 }
 
 group = 'az.orient'
@@ -16,6 +18,13 @@ configurations {
 }
 jacoco {
     toolVersion = "0.8.11"
+}
+sonar {
+    properties {
+        property "sonar.projectKey", "nurlan1221_ms-cshop-customer"
+        property "sonar.organization", "nurlan1221"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
 
 repositories {
