@@ -14,6 +14,7 @@ public class ValidCustomerNameValidator implements ConstraintValidator<ValidCust
     public boolean isValid(String value, ConstraintValidatorContext context) {
         if (value == null) {
             buildCustomValidation(context, "Customer name cannot be null");
+            return false;
         }
         if (value.matches("\\d+")) {
             buildCustomValidation(context, "Customer name cannot consist only of numbers");
